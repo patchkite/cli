@@ -1,0 +1,58 @@
+{
+  "name": "@patchkite/cli",
+  "version": "1.0.0",
+  "description": "Command-line interface for Patchkite",
+  "type": "module",
+  "bin": {
+    "patchkite": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "pack:release": "node scripts/pack-release.mjs"
+  },
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "commander": "^15.0.0",
+    "jose": "^6.2.12",
+    "semver": "^7.8.5",
+    "yauzl": "^3.4.0",
+    "yazl": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/semver": "latest",
+    "@types/yauzl": "latest",
+    "@types/yazl": "latest",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patchkite/cli.git"
+  },
+  "homepage": "https://patchkite.github.io/docs/reference/cli/",
+  "bugs": {
+    "url": "https://github.com/patchkite/cli/issues"
+  },
+  "keywords": [
+    "patchkite",
+    "ota",
+    "code-push",
+    "react-native",
+    "flutter",
+    "cli"
+  ],
+  "private": true
+}
