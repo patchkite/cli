@@ -21,7 +21,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
       - name: Check tag matches package version
-        run: test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
+        run: |
+          test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
       - run: pnpm pack:release
       - run: npm publish --provenance --access public
         working-directory: release

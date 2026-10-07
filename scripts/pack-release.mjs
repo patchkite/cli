@@ -1,6 +1,7 @@
 // Bundle the CLI into a single file with no workspace dependencies, then prepare the `release/`
 // folder that is published to npm as @patchkite/cli.
 import { build } from "esbuild";
+import { fileURLToPath } from "node:url";
 import { readFile, rm, mkdir, writeFile, copyFile, chmod } from "node:fs/promises";
 
 const pkg = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
@@ -9,8 +10,8 @@ await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 
 await build({
-  entryPoints: [new URL("../src/index.ts", import.meta.url).pathname],
-  outfile: new URL("patchkite.js", out).pathname,
+  entryPoints: [fileURLToPath(new URL("../src/index.ts", import.meta.url))],
+  outfile: fileURLToPath(new URL("patchkite.js", out)),
   bundle: true,
   platform: "node",
   format: "esm",
