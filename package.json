@@ -42,7 +42,7 @@
     "type": "git",
     "url": "https://github.com/patchkite/cli.git"
   },
-  "homepage": "https://patchkite.github.io/docs/reference/cli/",
+  "homepage": "https://docs.patchkite.com/reference/cli/",
   "bugs": {
     "url": "https://github.com/patchkite/cli/issues"
   },

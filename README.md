@@ -29,7 +29,7 @@ patchkite patch MyApp-Android Production -r 100
 patchkite rollback MyApp-Android Production
 ```
 
-Run `patchkite --help` or `patchkite <command> --help` for every command and option, or read the [CLI reference](https://patchkite.github.io/docs/reference/cli/).
+Run `patchkite --help` or `patchkite <command> --help` for every command and option, or read the [CLI reference](https://docs.patchkite.com/reference/cli/).
 
 ### In CI
 
@@ -40,7 +40,7 @@ Create an access key with `patchkite access-key add "CI" --ttl 365d`, then set t
 | `PATCHKITE_ACCESS_KEY` | The access key |
 | `PATCHKITE_SERVER_URL` | Your Patchkite server URL |
 
-See [Releasing from CI](https://patchkite.github.io/docs/guides/ci/).
+See [Releasing from CI](https://docs.patchkite.com/guides/ci/).
 
 ## Development
 
