@@ -29,7 +29,7 @@ const argv = process.argv.map((a) => {
 const api = () => PatchkiteApi.fromConfig();
 const program = new Command("patchkite")
   .description("Patchkite CLI — OTA updates for React Native & Flutter")
-  .version("1.0.0");
+  .version("1.0.1");
 
 const parseBool = (v: string | undefined) => (v === undefined ? true : !/^(false|0|no)$/i.test(v));
 const collect = (v: string, prev: string[] = []) => [...prev, v];
