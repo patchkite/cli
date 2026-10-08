@@ -2,6 +2,11 @@
 
 All notable changes to `@patchkite/cli` are documented here. This project follows [Semantic Versioning](https://semver.org/).
 
+## 1.0.1
+
+- The npm package page now links to the documentation at docs.patchkite.com.
+- First release published from GitHub Actions with npm trusted publishing and provenance.
+
 ## 1.0.0
 
 First public release.
