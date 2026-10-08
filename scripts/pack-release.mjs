@@ -37,7 +37,7 @@ await writeFile(
       engines: pkg.engines,
       repository: { type: "git", url: "https://github.com/patchkite/cli.git" },
       license: "MIT",
-      homepage: "https://github.com/patchkite/cli#readme",
+      homepage: pkg.homepage,
       bugs: { url: "https://github.com/patchkite/cli/issues" },
       publishConfig: { access: "public", provenance: true },
     },
