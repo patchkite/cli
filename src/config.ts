@@ -7,7 +7,7 @@ export interface CliConfig {
   accessKey: string;
 }
 
-export const DEFAULT_SERVER_URL = "http://localhost:3000";
+export const DEFAULT_SERVER_URL = "https://api.patchkite.com";
 export const CONFIG_PATH = process.env.PATCHKITE_CONFIG_PATH ?? path.join(homedir(), ".patchkite.config");
 
 export function readConfig(): CliConfig | null {
