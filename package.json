@@ -34,7 +34,7 @@
     "@types/yazl": "latest",
     "esbuild": "^0.28.2",
     "typescript": "^7.0.2",
-    "vitest": "^5.0.2"
+    "vitest": "^5.0.5"
   },
   "packageManager": "pnpm@11.21.0",
   "license": "MIT",
