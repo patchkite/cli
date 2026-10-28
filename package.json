@@ -22,7 +22,7 @@
   "dependencies": {
     "cli-table3": "^0.6.5",
     "commander": "^15.0.0",
-    "jose": "^6.2.12",
+    "jose": "^6.2.13",
     "semver": "^7.8.5",
     "yauzl": "^3.4.0",
     "yazl": "^3.3.1"
@@ -34,7 +34,7 @@
     "@types/yazl": "latest",
     "esbuild": "^0.28.2",
     "typescript": "^7.0.2",
-    "vitest": "^5.0.2"
+    "vitest": "^5.0.5"
   },
   "packageManager": "pnpm@11.21.0",
   "license": "MIT",
